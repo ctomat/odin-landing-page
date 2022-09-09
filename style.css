@@ -9,17 +9,30 @@ h1 {
     font-weight: bold;
 }
 
+.welcome-section {
+    background: linear-gradient(90deg, #48AEF0 2.11%, #548AC9 54.4%, #5C73AF 87.87%);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+}
+
 .top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(180deg, #DA7F52 0%, rgba(218, 127, 82, 0.71) 40.1%, rgba(218, 127, 82, 0.68) 69.27%, rgba(218, 127, 82, 0.79) 100%);
     height: 80px;
     width: 95%;
     padding: 1em;
-    border-radius: 10px;
-    border: 1.25px solid rgba(218, 127, 82, 1)
+    margin: 0 auto 10px auto;
 }
 
 .top-nav header {
