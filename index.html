@@ -19,16 +19,22 @@
                 </figure>
                 <h1>STUDIO GHIBLI</h1>
             </header>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
+        </nav>
+
+        <!--HAMBURGER MENU-->
+        <div class="menu-button-container" onclick="buttonAnimationTrigger() ">
+            <div class='menu-button' id="button-animation"></div>
+        </div>
+
+        <div class="menu-container glass hide-element" id="hamburger">
             <ul class="menu">
                 <li>Movies</li>
                 <li>History</li>
                 <li>Merchandising</li>
             </ul>
-        </nav>
+        </div>
+        <!--HAMBURGER MENU-->
+
         <article class="introduction-article glass">
             <header>
                 <h2>
@@ -45,5 +51,6 @@
         </article>
     </section>
 </body>
+<script src="./js/index.js"></script>
 
 </html>
