@@ -11,45 +11,95 @@
 </head>
 
 <body>
-    <section class="welcome-section">
-        <nav class="top-nav glass">
-            <header>
+    <main>
+        <section class="welcome-section">
+            <nav class="top-nav glass">
+                <header>
+                    <figure>
+                        <img src="./images/studio-ghibli-logo.png" alt="studio-ghibli-logo">
+                    </figure>
+                    <h1>STUDIO GHIBLI</h1>
+                </header>
+            </nav>
+
+            <!--HAMBURGER MENU-->
+            <div class="menu-button-container" onclick="buttonAnimationTrigger() ">
+                <div class='menu-button' id="button-animation"></div>
+            </div>
+
+            <div class="menu-container glass hide-element" id="hamburger">
+                <ul class="menu">
+                    <li>Movies</li>
+                    <li>History</li>
+                    <li>Merchandising</li>
+                </ul>
+            </div>
+            <!--HAMBURGER MENU-->
+
+            <article class="introduction-article glass">
+                <header>
+                    <h2>
+                        Once you've met someone you never really forget them.
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rem blanditiis in perferendis
+                        tenetur, ipsam error magnam repudiandae earum ad dolore ullam eum sed quas consequuntur non
+                        rerum id deserunt!</p>
+                    <button>Sign Up</button>
+                </header>
                 <figure>
-                    <img src="./images/studio-ghibli-logo.png" alt="studio-ghibli-logo">
+                    <img src="./images/robot.gif" alt="robot">
                 </figure>
-                <h1>STUDIO GHIBLI</h1>
-            </header>
-        </nav>
-
-        <!--HAMBURGER MENU-->
-        <div class="menu-button-container" onclick="buttonAnimationTrigger() ">
-            <div class='menu-button' id="button-animation"></div>
-        </div>
-
-        <div class="menu-container glass hide-element" id="hamburger">
-            <ul class="menu">
-                <li>Movies</li>
-                <li>History</li>
-                <li>Merchandising</li>
-            </ul>
-        </div>
-        <!--HAMBURGER MENU-->
-
-        <article class="introduction-article glass">
-            <header>
-                <h2>
-                    Once you've met someone you never really forget them.
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rem blanditiis in perferendis
-                    tenetur, ipsam error magnam repudiandae earum ad dolore ullam eum sed quas consequuntur non
-                    rerum id deserunt!</p>
-                <button>Sign Up</button>
-            </header>
-            <figure>
-                <img src="./images/robot.gif" alt="robot">
-            </figure>
-        </article>
-    </section>
+            </article>
+        </section>
+        <section class="movies-section">
+            <article class="some-movies-article">
+                <div class="some-movies-title">
+                    <header>
+                        <h2>Our most popular movies</h2>
+                    </header>
+                </div>
+                <div class="some-movies-images">
+                    <figure class="glass">
+                        <img src="./images/kiki.JPG" alt="Kiki">
+                        <figcaption>Kiki's Delivery Service (1989)</figcaption>
+                    </figure>
+                    <figure class="glass">
+                        <img src="./images/mononoke.jpg" alt="Mononoke">
+                        <figcaption>Princess Mononoke (1997)</figcaption>
+                    </figure>
+                    <figure class="glass">
+                        <img src="./images/chihiro.jpg" alt="Chihiro">
+                        <figcaption>Spirited Away (2001)</figcaption>
+                    </figure>
+                    <figure class="glass">
+                        <img src="./images/howl.jpg" alt="Howl">
+                        <figcaption>Howl's Moving Castle (2004)</figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="quote-article">
+                <div class="quote-container">
+                    <div class="quote-text glass">
+                        <p>“Who has seen the wind? Neither I nor you: But when the leaves hang trembling, The wind is
+                            passing through.”</p>
+                    </div>
+                    <div class="quote-author">
+                        <span>- 'The Wind Rises'.</span>
+                    </div>
+                </div>
+            </article>
+            <article class="glass sign-up">
+                <header>
+                    <h3>Call to action!</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </header>
+                <div class="button-container">
+                    <button>Sign up</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>Copyright © The Odin Project 2022</footer>
 </body>
 <script src="./js/index.js"></script>
 
