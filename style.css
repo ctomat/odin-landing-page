@@ -63,6 +63,10 @@ button {
     width: 48px;
     height: auto;
 }
+
+.menu-desktop {
+    display: none;
+}
   
 .menu {
     display: flex;
@@ -245,4 +249,72 @@ button {
 
 footer {
     text-align: center;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 1023px) {
+    button {
+        cursor: pointer;
+    }
+
+    .menu-button-container {
+        display: none;
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+        display: none;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .hide-element {
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+    }
+
+    .hide-element.glass {
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+        backdrop-filter: initial;
+    }
+
+    .introduction-article {
+        flex-direction: row;
+        text-align: start;
+        padding: 40px;
+    }
+
+    .introduction-article header {
+        align-items: flex-start;
+    }
+
+    .quote-article {
+        width: fit-content;
+        height: auto;
+    }
+
+    .sign-up {
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: fit-content;
+    }
+
+    .sign-up header {
+        text-align: start;
+    }
 }
